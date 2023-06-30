@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/et1"
+        android:layout_below="@+id/tv1"
+        android:layout_alignEnd="@+id/radioGroup"
+        android:layout_marginTop="42dp"
+        android:layout_toEndOf="@+id/tv2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temperature Converter"
+        android:id="@+id/tv1"
+        android:layout_alignParentTop="true"
+        android:textSize="24dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Input Temperature"
+        android:id="@+id/tv2"
+        android:layout_alignBottom="@+id/et1"
+        android:textSize="20dp"
+        android:textColor="#400683"
+        android:textStyle="bold"
+        android:layout_alignParentStart="true" />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup"
+        android:layout_below="@+id/tv3"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="46dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Celsius To Fahrenheit "
+            android:id="@+id/c2fr"
+            android:layout_gravity="center_horizontal"
+            android:textSize="24dp"
+            android:textColor="#ce4708"
+            android:textStyle="bold"
+            android:checked="false" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fahrenheit To Celsius"
+            android:id="@+id/f2cr"
+            android:layout_gravity="center_horizontal"
+            android:textSize="24dp"
+            android:textColor="#05555b"
+            android:textStyle="bold"
+            android:checked="false" />
+    </RadioGroup>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:id="@+id/tv3"
+        android:layout_alignBottom="@+id/et2"
+        android:textSize="20dp"
+        android:textColor="#c10404"
+        android:textStyle="bold"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/et2"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/tv2"
+        android:layout_alignStart="@+id/et1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:id="@+id/b1"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="24dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_marginBottom="65dp" />
+</RelativeLayout>
+
+
+
+
+
